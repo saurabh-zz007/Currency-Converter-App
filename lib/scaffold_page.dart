@@ -59,7 +59,7 @@ class _CurrencyConverterPageState
           children: [
             //Text
             Text(
-              '$result INR',
+              '${result != 0 ? result.toStringAsFixed(3) : result.toStringAsFixed(0)} INR',
               style: TextStyle(
                 fontSize: 45,
                 fontWeight: FontWeight.bold,
