@@ -14,6 +14,13 @@ class _CurrencyConverterPageState
   final TextEditingController controller =
       TextEditingController();
   double result = 0;
+
+  @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     final boarder = OutlineInputBorder(
